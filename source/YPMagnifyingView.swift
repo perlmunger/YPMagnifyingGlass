@@ -67,6 +67,7 @@ public class YPMagnifyingView: UIView {
         self.magnifyingGlass.setNeedsDisplay()
     }
     
+    @objc
     public func addMagnifyingGlassTimer(timer: Timer) {
         let value: AnyObject? = timer.userInfo as AnyObject?
         if let point = value?.cgPointValue {
